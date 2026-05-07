@@ -25,9 +25,12 @@ button:hover {
 .mensaje-exito {
     color: rgb(223, 197, 110);
     font-weight: bold;
-    padding: 10px;
+    padding: 5px;
     background-color: #5b1f17;
-    border-radius: 4px; 
+    border-radius: 5px; 
+    /* Ajustamos el cuadro de mensaje */
+    width: fit-content; 
+    margin: 10px auto; 
 }
 .mensaje-error {
     color: red;
@@ -35,6 +38,9 @@ button:hover {
     padding: 10px;
     background-color: #ffcccc;
     border-radius: 4px; 
+    /* Ajustamos el cuadro de mensaje */
+    width: fit-content; 
+    margin: 10px auto;
 }
 /*Estilos para el nuevo botón de limpiar*/
 .btn-secundario {
