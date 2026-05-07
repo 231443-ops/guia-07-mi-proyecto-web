@@ -8,7 +8,7 @@ function saludar() {
 }
 
 // Parte F - Nueva función de validación
-function validarCorreo() {
+/*function validarCorreo() {
     // Aquí buscamos el ID "correo" que pusimos en el HTML
     let correoElemento = document.getElementById("correo");
     
@@ -23,5 +23,20 @@ function validarCorreo() {
         document.getElementById("mensajeCorreo").innerText = "Ingrese un correo electrónico."; [cite= 439]
     } else {
         document.getElementById("mensajeCorreo").innerText = "Correo registrado correctamente."; [cite= 442]
+    }
+}*/
+// version mejorada: Validaciion mas completa y mensajes dinamicos
+function validarCorreo() {
+    let correoElemento = document.getElementById("correo");
+    let mensajeElemento = document.getElementById("mensajeCorreo");
+    let correo = correoElemento.value;
+
+    if (correo === "") {
+        mensajeElemento.innerText = "Error: Debe ingresar un correo electrónico.";
+        mensajeElemento.className = "mensaje-error"; // Aplica estilo rojo
+    } else {
+        mensajeElemento.innerText = "¡Éxito! El correo " + correo + " fue registrado correctamente.";
+        mensajeElemento.className = "mensaje-exito"; // Aplica estilo verde
+        correoElemento.value = ""; // Limpia la caja de texto
     }
 }

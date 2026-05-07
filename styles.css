@@ -21,3 +21,18 @@ button {
 button:hover {
     background-color: #2980b9;
 }
+/*Añadimos nuevos estilos para la mejora de la interfaz*/
+.mensaje-exito {
+    color: rgb(223, 197, 110);
+    font-weight: bold;
+    padding: 10px;
+    background-color: #5b1f17;
+    border-radius: 4px; 
+}
+.mensaje-error {
+    color: red;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #ffcccc;
+    border-radius: 4px; 
+}
