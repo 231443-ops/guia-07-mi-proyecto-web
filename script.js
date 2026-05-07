@@ -40,3 +40,13 @@ function validarCorreo() {
         correoElemento.value = ""; // Limpia la caja de texto
     }
 }
+// Nueva función para limpiar el formulario
+function limpiarFormulario() {
+    // Vaciar la caja de texto
+    document.getElementById("correo").value = "";
+    
+    // Quitar el mensaje y sus colores
+    let mensajeElemento = document.getElementById("mensajeCorreo");
+    mensajeElemento.innerText = "";
+    mensajeElemento.className = ""; // Esto quita el estilo verde o rojo
+}

@@ -36,3 +36,16 @@ button:hover {
     background-color: #ffcccc;
     border-radius: 4px; 
 }
+/*Estilos para el nuevo botón de limpiar*/
+.btn-secundario {
+    padding: 8px 15px;
+    background-color: #95a5a6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.btn-secundario:hover {
+    background-color: #7f8c8d;
+}
